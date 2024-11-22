@@ -1,0 +1,103 @@
+/* Thiết lập box-sizing để tính toán chiều rộng chính xác hơn */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Tính toán chiều rộng theo border-box */
+}
+
+/* Cài đặt font và màu nền cho toàn bộ trang */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f4f8; /* Màu nền nhẹ và dễ chịu */
+    color: #333; /* Màu chữ tối */
+}
+
+/* Container căn giữa nội dung */
+.container {
+    max-width: 900px;
+    margin: 0 auto; /* Căn giữa container */
+    padding: 20px; /* Khoảng cách xung quanh nội dung */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho container */
+    background-color: #fff; /* Màu nền trắng cho nội dung */
+    border-radius: 8px; /* Bo tròn các góc */
+}
+
+/* Tiêu đề h1 */
+h1 {
+    color: #2c3e50; /* Màu chữ cho tiêu đề */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center; /* Căn giữa tiêu đề */
+}
+
+/* Cải thiện kiểu bảng */
+.table {
+    width: 100%; /* Chiếm hết chiều rộng container */
+    border-collapse: collapse; /* Cải thiện kiểu bảng */
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 10px; /* Khoảng cách trong các ô của bảng */
+    text-align: center; /* Căn giữa chữ trong bảng */
+    border: 1px solid #ddd; /* Đường viền cho bảng */
+}
+
+.table th {
+    background-color: #007BFF; /* Màu nền cho tiêu đề cột */
+    color:rgb(216, 55, 55) ; /* Màu chữ trắng cho tiêu đề */
+    font-weight: bold; /* Định dạng chữ in đậm */
+}
+
+/* Màu nền khi hover các ô bảng */
+.table td:hover {
+    background-color: #e9ecef; /* Màu nền khi di chuột vào ô bảng */
+}
+
+/* Kiểu dáng cho các nút */
+.btn {
+    padding: 4px 10px; /* Giảm padding để nút nhỏ gọn hơn */
+    background-color: #007BFF; /* Màu nền của nút */
+    color: white;
+    border: none;
+    border-radius: 4px; /* Giảm bo tròn các góc */
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s; /* Hiệu ứng chuyển màu và phóng to */
+    margin: 3px; /* Giảm margin để tạo khoảng cách nhỏ giữa các nút */
+    font-size: 0.8em; /* Giảm kích thước chữ cho nút */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Màu khi hover trên nút */
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+}
+
+/* Định dạng các ô nhập liệu */
+input[type="text"], input[type="number"] {
+    width: 100%; /* Chiếm hết chiều rộng của container */
+    padding: 10px;
+    margin-bottom: 15px; /* Khoảng cách giữa các ô nhập liệu */
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Bo tròn các góc */
+}
+
+/* Các thông báo (flash messages) */
+.alert {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+.alert-success { background-color: #28a745; }
+.alert-danger { background-color: #dc3545; }
+.alert-info { background-color: #17a2b8; }
+.alert-warning { background-color: #ffc107; color: black; }
+
+/* Điều chỉnh khoảng cách cho navbar và form */
+.navbar, form {
+    margin-bottom: 20px;
+}
+
